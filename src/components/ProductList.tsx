@@ -61,21 +61,23 @@ const ProductList = () => {
             <span>{`Pages: ${currentPage}/${
               products?.total / productsPerPage
             }`}</span>
-            <button
-              className="prev-btn"
-              onClick={() => paginate(currentPage - 1)}
-              disabled={currentPage === 1}
-            >
-              Previous
-            </button>
+            <div>
+              <button
+                className="prev-btn"
+                onClick={() => paginate(currentPage - 1)}
+                disabled={currentPage === 1}
+              >
+                Previous
+              </button>
 
-            <button
-              className="next-btn"
-              onClick={() => paginate(currentPage + 1)}
-              disabled={currentPage * productsPerPage === products?.total}
-            >
-              Next
-            </button>
+              <button
+                className="next-btn"
+                onClick={() => paginate(currentPage + 1)}
+                disabled={currentPage * productsPerPage === products?.total}
+              >
+                Next
+              </button>
+            </div>
           </div>
         </div>
       </div>

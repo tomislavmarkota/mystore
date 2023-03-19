@@ -95,6 +95,13 @@
   background-color: #ebebeb;
   width: fit-content;
   border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  @media (min-width: 750px) {
+    flex-direction: row;
+  }
   .prev-btn,
   .next-btn {
     padding: 0.6rem 1rem;
