@@ -104,9 +104,17 @@
   }
   .prev-btn,
   .next-btn {
+    background-color: #00ade5;
     padding: 0.6rem 1rem;
     cursor: pointer;
     margin: 0 1rem;
+    border: none;
+    border-radius: 12px;
+    color: #ffffff;
+    transition: background-color .4s ease-in-out;
+    &:hover{
+      background-color: #016b8f;
+    }
   }
 }
 
